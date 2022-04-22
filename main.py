@@ -12,9 +12,6 @@ def get_forecast(lat: float = 57.09, lon: float = 65.32,
     return requests.get(URL_BASE, params=locals()).json()
 
 
-
-
-
 def get_pogoda(pogoda):
     daily_pogoda = pogoda.get('daily')
     day_forecast = {}
@@ -32,9 +29,6 @@ def get_pogoda(pogoda):
         ]
 
     return day_forecast
-
-
-
 
 
 def set_file_forecast(forestcast):
